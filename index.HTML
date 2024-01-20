@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BULB ON AND OFF</title>
+    <script type="text/javascript">
+        function light(show){
+        var pic
+        if (show==0) {
+            pic="pic_bulboff.gif";
+        }
+        else{
+            pic="images.jpg";
+        }
+        document.getElementById('bulb').src = pic;
+    }
+    </script>
+</head>
+
+<body>
+    <H1>BULB ON AND OFF</H1>
+    <P>Here a javascript changes the value of the source attribute of animage</P>
+<center>
+
+
+    <img src="pic_bulboff.gif" id="bulb" alt="" width="100px" height="180px">
+<p>
+
+<button type="button" onclick="light(1)">light on</button>
+<button type="button" onclick="light(0)">light off</button>
+</p>
+
+</center>
+
+</body>
+
+</html>
